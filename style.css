@@ -26,7 +26,7 @@ img {
     --muted: #94a3b8;
 }
 
-/* NAVBAR */
+/* NAV */
 header {
     position: sticky;
     top: 0;
@@ -154,8 +154,8 @@ section {
     font-size: 32px
 }
 
-/* WHY CHOOSE SECTION */
-.why-choose {
+/* why chose */
+.whychoose {
     background: radial-gradient(circle at top, #2a0f4f, #150625);
 }
 
@@ -165,40 +165,40 @@ section {
     margin-bottom: 48px;
 }
 
-.why-grid {
+.whygrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
-.why-card {
+.whycard {
     background: #1b0b33;
     border-radius: 20px;
     padding: 28px;
 }
 
-.why-card img {
+.whycard img {
     width: 36px;
     margin-bottom: 16px;
 }
 
-.why-card h3 {
+.whycard h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.why-card p {
+.whycard p {
     font-size: 14px;
     color: #cbd5f5;
     line-height: 1.6;
 }
 
 /* CARD SIZE VARIATIONS (LIKE FIGMA) */
-.why-card.large {
+.whycard.large {
     grid-row: span 2;
 }
 
-.why-card.wide {
+.whycard.wide {
     grid-column: span 2;
 }
 
@@ -314,12 +314,54 @@ section {
 .host-socials img {
     width: 18px;
 }
+
 /* FOOTER */
-footer {
-    border-top: 1px solid var(--border);
-    padding: 40px 16px;
+
+.footer {
+    background: linear-gradient(rgba(35, 10, 61, 0.45), rgba(66, 15, 71, 0.45)), url('assets/footer-bg.png') center / cover no-repeat;
+    padding: 80px 16px 30px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
     text-align: center;
-    color: var(--muted);
+    gap: 32px;
+}
+
+.platform-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.platform img {
+    width: 32px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-bottom hr {
+    border: none;
+    border-top: 1px solid rgba(180, 164, 164, 0.192);
+    margin-bottom: 16px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #94a3b8;
 }
 
 /* RESPONSIVE */
