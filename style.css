@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body {
@@ -26,7 +29,11 @@ img {
     --muted: #94a3b8;
 }
 
+<<<<<<< HEAD
 /* NAV */
+=======
+/* nav */
+>>>>>>> 7b3a50d (Final)
 header {
     position: sticky;
     top: 0;
@@ -45,8 +52,11 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+}
+.logoc{
+    color: rgb(204, 54, 116);
 }
 
 .menu {
@@ -76,22 +86,30 @@ header {
     font-size: 26px
 }
 
-/* HERO */
+/* hero */
 .hero {
     background: url('assets/hero-bg.png') center/cover no-repeat;
     text-align: center;
-    padding: 120px 16px;
+    padding: 120px 80px;
 }
 
 .circle {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto 32px;
     border-radius: 50%;
     background: url('assets/hero-circle.png') center/cover no-repeat;
     position: relative;
 }
-
+ .mic {
+     width: 90px;
+     height: auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     align-items: center;
+ }
 .badge {
     position: absolute;
     top: 20px;
@@ -100,6 +118,21 @@ header {
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 12px;
+    animation: badgeMove 1s ease-in-out infinite;
+}
+
+@keyframes badgeMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .hero h1 {
@@ -120,7 +153,7 @@ header {
     gap: 16px;
 }
 
-/* GLOBAL SECTIONS */
+/* global */
 section {
     padding: 80px 16px
 }
@@ -131,7 +164,7 @@ section {
     margin: auto
 }
 
-/* ABOUT */
+/* about */
 .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -193,7 +226,11 @@ section {
     line-height: 1.6;
 }
 
+<<<<<<< HEAD
 /* CARD SIZE VARIATIONS (LIKE FIGMA) */
+=======
+
+>>>>>>> 7b3a50d (Final)
 .whycard.large {
     grid-row: span 2;
 }
@@ -203,7 +240,7 @@ section {
 }
 
 
-/* FEATURED EPISODES */
+/*  episode */
 .featured-episodes {
     background: radial-gradient(circle at top, #2a0f4f, #150625);
 }
@@ -225,7 +262,7 @@ section {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 ratio */
+    
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;
@@ -257,12 +294,17 @@ section {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 /* MEET THE HOST */
+=======
+/* host */
+>>>>>>> 7b3a50d (Final)
 .meet-host {
     background: radial-gradient(circle at top, #2a0f4f, #150625);
 }
 
 .meet-host .section-title {
+<<<<<<< HEAD
     text-align: center;
     font-size: 36px;
     margin-bottom: 48px;
@@ -362,9 +404,112 @@ section {
 .footer-bottom p {
     font-size: 14px;
     color: #94a3b8;
+=======
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+>>>>>>> 7b3a50d (Final)
 }
 
-/* RESPONSIVE */
+.host-card {
+    background: linear-gradient(135deg, #2b0f4e, #1a082f);
+    border-radius: 28px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.host-img img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host-content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.host-content p {
+    color: #cbd5f5;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 700px;
+    text-align: left;
+}
+
+.host-socials {
+    display: flex;
+    gap: 14px;
+}
+
+.host-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #7c3aed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.host-socials img {
+    width: 18px;
+}
+
+/* footer */
+
+.footer {
+    background: linear-gradient(rgba(35, 10, 61, 0.45), rgba(66, 15, 71, 0.45)), url('assets/footer-bg.png') center / cover no-repeat;
+    padding: 80px 16px 30px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.platform-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.platform img {
+    width: 32px;
+}
+
+/* bottom */
+.footer-bottom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-bottom hr {
+    border: none;
+    border-top: 1px solid rgba(180, 164, 164, 0.192);
+    margin-bottom: 16px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* resposive */
 @media(max-width:992px) {
     .features {
         grid-template-columns: repeat(2, 1fr)
