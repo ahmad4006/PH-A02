@@ -29,11 +29,10 @@ img {
     --muted: #94a3b8;
 }
 
-<<<<<<< HEAD
-/* NAV */
-=======
+
 /* nav */
->>>>>>> 7b3a50d (Final)
+
+
 header {
     position: sticky;
     top: 0;
@@ -225,12 +224,6 @@ section {
     color: #cbd5f5;
     line-height: 1.6;
 }
-
-<<<<<<< HEAD
-/* CARD SIZE VARIATIONS (LIKE FIGMA) */
-=======
-
->>>>>>> 7b3a50d (Final)
 .whycard.large {
     grid-row: span 2;
 }
@@ -293,18 +286,12 @@ section {
     color: #22c55e;
     font-weight: 500;
 }
-
-<<<<<<< HEAD
-/* MEET THE HOST */
-=======
-/* host */
->>>>>>> 7b3a50d (Final)
 .meet-host {
     background: radial-gradient(circle at top, #2a0f4f, #150625);
 }
 
 .meet-host .section-title {
-<<<<<<< HEAD
+
     text-align: center;
     font-size: 36px;
     margin-bottom: 48px;
@@ -404,11 +391,7 @@ section {
 .footer-bottom p {
     font-size: 14px;
     color: #94a3b8;
-=======
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 48px;
->>>>>>> 7b3a50d (Final)
+
 }
 
 .host-card {
